@@ -64,5 +64,8 @@ public class Lab09 {
         Function<City, String> clasifyCitiesByCountry = city -> city.getCountry();
         cities.stream()
                 .collect(Collectors.groupingBy(clasifyCitiesByCountry, Collectors.counting())).forEach((key, value) -> System.out.println("Country: %s -> #cities: %d".formatted(key,value)));
+
+
+        cities.stream().map(x -> x.getName()).forEach(System.out::println);
     }
 }
