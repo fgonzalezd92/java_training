@@ -17,6 +17,9 @@
       <module name="day06-streams" target="17" />
       <module name="day06-streams.main" target="17" />
       <module name="day06-streams.test" target="17" />
+      <module name="day07-misc" target="17" />
+      <module name="day07-misc.main" target="17" />
+      <module name="day07-misc.test" target="17" />
       <module name="test2" target="17" />
       <module name="test2.main" target="17" />
       <module name="test2.test" target="17" />
