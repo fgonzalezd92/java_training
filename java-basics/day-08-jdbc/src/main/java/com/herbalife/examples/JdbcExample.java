@@ -1,6 +1,6 @@
 package com.herbalife.examples;
 
-import com.mysql.cj.protocol.Resultset;
+//import com.mysql.cj.protocol.Resultset;
 
 import java.sql.*;
 import java.util.List;
@@ -17,76 +17,76 @@ public class JdbcExample {
     }
 
 
-    private static void insertPersonUsingStoredProc(String firstName, String lastName, int age) throws SQLException {
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); //Type.GetType
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
-            String query = "call sp_insertPerson(?,?,?)";
-            CallableStatement statement = connection.prepareCall(query);
-            statement.setString(1, firstName);
-            statement.setString(2, lastName);
-            statement.setInt(3, age);
-            statement.execute();
-            statement.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            connection.close();
-        }
-
-    }
-    private static void insertPersonsUsingPreparedStatement(List<Person> persons) throws SQLException {
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
-            String query = "insert into persons(first_name, last_name, age) values(?,?,?)";
-            PreparedStatement statement = connection.prepareStatement(query);
-            persons.forEach(person -> {
-                try {
-                    statement.setString(1, person.firstname());
-                    statement.setString(2, person.lastname());
-                    statement.setInt(3, person.age());
-                    statement.execute();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            });
-            statement.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            connection.close();
-        }
-
-    }
-
-    private static void insertPersonUsingPreparedStatement(String firstName, String lastName, int age) throws SQLException {
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
-            String query = "insert into persons(first_name, last_name, age) values(?,?,?)";
-            PreparedStatement statement = connection.prepareStatement(query);
-            statement.setString(1, firstName);
-            statement.setString(2, lastName);
-            statement.setInt(3, age);
-            statement.execute();
-            statement.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            connection.close();
-        }
-
-    }
+//    private static void insertPersonUsingStoredProc(String firstName, String lastName, int age) throws SQLException {
+//        Connection connection = null;
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver"); //Type.GetType
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
+//            String query = "call sp_insertPerson(?,?,?)";
+//            CallableStatement statement = connection.prepareCall(query);
+//            statement.setString(1, firstName);
+//            statement.setString(2, lastName);
+//            statement.setInt(3, age);
+//            statement.execute();
+//            statement.close();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//            connection.close();
+//        }
+//
+//    }
+//    private static void insertPersonsUsingPreparedStatement(List<Person> persons) throws SQLException {
+//        Connection connection = null;
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
+//            String query = "insert into persons(first_name, last_name, age) values(?,?,?)";
+//            PreparedStatement statement = connection.prepareStatement(query);
+//            persons.forEach(person -> {
+//                try {
+//                    statement.setString(1, person.firstname());
+//                    statement.setString(2, person.lastname());
+//                    statement.setInt(3, person.age());
+//                    statement.execute();
+//                } catch (SQLException e) {
+//                    e.printStackTrace();
+//                }
+//            });
+//            statement.close();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//            connection.close();
+//        }
+//
+//    }
+//
+//    private static void insertPersonUsingPreparedStatement(String firstName, String lastName, int age) throws SQLException {
+//        Connection connection = null;
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "root");
+//            String query = "insert into persons(first_name, last_name, age) values(?,?,?)";
+//            PreparedStatement statement = connection.prepareStatement(query);
+//            statement.setString(1, firstName);
+//            statement.setString(2, lastName);
+//            statement.setInt(3, age);
+//            statement.execute();
+//            statement.close();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//            connection.close();
+//        }
+//
+//    }
 
     private static void getAllPersons() throws SQLException {
         Connection connection = null;
