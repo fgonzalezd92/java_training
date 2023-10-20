@@ -2,6 +2,7 @@ package com.herbalife.examples;
 
 import java.util.List;
 
+
 public class City {
     private String name;
     private String country;
