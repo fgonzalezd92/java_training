@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/day-08-jdbc" />
+    <file type="web" url="file://$PROJECT_DIR$/day-09" />
     <file type="web" url="file://$PROJECT_DIR$/day02-00-concepts" />
     <file type="web" url="file://$PROJECT_DIR$/day03-oo-concepts" />
     <file type="web" url="file://$PROJECT_DIR$/day04-lambdas" />

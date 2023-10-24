@@ -14,6 +14,16 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/day-09" />
+        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/day-09" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/day02-00-concepts" />
         <option name="gradleHome" value="" />
         <option name="gradleJvm" value="#JAVA_HOME" />
