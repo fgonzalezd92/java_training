@@ -2,10 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="day-08-jdbc" target="17" />
       <module name="day-08-jdbc.main" target="17" />
       <module name="day-08-jdbc.test" target="17" />
-      <module name="day-09" target="17" />
       <module name="day-09.main" target="17" />
       <module name="day-09.test" target="17" />
       <module name="day02-00-concepts" target="17" />
@@ -26,6 +24,11 @@
       <module name="day07-misc" target="17" />
       <module name="day07-misc.main" target="17" />
       <module name="day07-misc.test" target="17" />
+      <module name="day08-jdbc" target="17" />
+      <module name="day09" target="17" />
+      <module name="day10-more-concurrency" target="17" />
+      <module name="day10-more-concurrency.main" target="17" />
+      <module name="day10-more-concurrency.test" target="17" />
       <module name="test2" target="17" />
       <module name="test2.main" target="17" />
       <module name="test2.test" target="17" />
