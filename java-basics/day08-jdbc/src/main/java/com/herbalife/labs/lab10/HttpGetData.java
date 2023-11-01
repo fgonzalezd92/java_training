@@ -1,5 +1,6 @@
 package com.herbalife.labs.lab10;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -20,16 +21,16 @@ public class HttpGetData {
         httpClient =  HttpClient.newBuilder().build();
     }
 
-    public Movie GetMovieData() throws URISyntaxException, IOException, InterruptedException {
-        HttpRequest request = HttpRequest.newBuilder(new URI(url)).GET().build();
-        Movie result = null;
-
-        var response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-        String stringResult = response.body();
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        result = objectMapper.readValue(stringResult, Movie.class);
-
-        return result;
-    }
+//    public Movie GetMovieData() throws URISyntaxException, IOException, InterruptedException, JsonProcessingException {
+//        HttpRequest request = HttpRequest.newBuilder(new URI(url)).GET().build();
+//        Movie result = null;
+//
+//        var response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+//        String stringResult = response.body();
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//        result = objectMapper.readValue(stringResult, Movie.class);
+//
+//        return result;
+//    }
 }

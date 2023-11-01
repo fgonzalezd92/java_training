@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day02-00-concepts" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day03-oo-concepts" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day04-lambdas" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day05-functional-interfaces" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day06-streams" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day07-misc" />
+    <file type="web" url="file://$PROJECT_DIR$/java-basics/day10-more-concurrency" />
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
