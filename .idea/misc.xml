@@ -11,6 +11,8 @@
     <file type="web" url="file://$PROJECT_DIR$/java-basics/day10-more-concurrency" />
     <file type="web" url="file://$PROJECT_DIR$/quarkus-applications/day14-lab04-orm" />
     <file type="web" url="file://$PROJECT_DIR$/quarkus-applications/day15-more-on-orm" />
+    <file type="web" url="file://$PROJECT_DIR$/quarkus-applications/day16-lab05" />
+    <file type="web" url="file://$PROJECT_DIR$/quarkus-applications/day16-more-on-rest-di" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
